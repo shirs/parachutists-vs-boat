@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<title>YAY LET'S PLAY!</title>
+		<style>
+			canvas {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background: transparent;
+			}
+			#background {
+				z-index: -5;
+			}
+			#ocean {
+				z-index: -4;
+			}
+			#airplane {
+				z-index: -3;
+			}
+			#boat {
+				z-index: -2;
+			}
+			#parachutists {
+				z-index: -1;
+			}
+			#stats {
+				z-index: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="background" width="600" height="360">
+			Your browser does not support canvas, please try a different browser.
+		</canvas>
+		<canvas id="ocean" width="600" height="360">
+		</canvas>
+		<canvas id="airplane" width="600" height="360">
+		</canvas>
+		<canvas id="parachutists" width="600" height="360">
+		</canvas>
+		<canvas id="boat" width="600" height="360">
+		</canvas>
+		<canvas id="stats" width="600" height="360">
+		</canvas>
+		<script src="game_part11.js"></script>
+	</body>
+</html>
